@@ -1,0 +1,23 @@
+
+
+@charset "utf-8";
+/* CSS Document */
+
+.s150 .main-wrap {margin: 0 280px 0 180px; }
+.s150 .col-sub { width: 170px; margin-left: -100%; }
+.e270 .col-extra {  width: 270px; margin-left: -270px; }
+
+
+.create-coll .main-wrap { margin: 0 21px 0 21px; }
+.create-coll .col-sub { width: 21px; margin-left: -100%; }
+.create-coll .col-extra { width: 21px; margin-left: -21px; }
+
+/*.s170 .col-sub {width: 170px;}
+.s170 .main-wrap {margin-left:180px;}
+
+.grid-zxtc .main-wrap { margin: 0 21px 0 21px; }
+.grid-zxtc .col-sub { width: 21px; margin-left: -100%; }
+.grid-zxtc .col-extra { width: 21px; margin-left: -21px; }
+*/
+.s170 .main-wrap { margin-left: 180px; }
+.s170 .col-sub { width: 170px; margin-left: -100%; }

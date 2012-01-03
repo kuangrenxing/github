@@ -1,0 +1,41 @@
+<?php
+
+return array(
+    'modules'=>array(
+        'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'',
+            'generatorPaths'=>array(
+                'ext.gtc',   // Gii Template Collection
+            ),
+        ),
+    ),
+    'components'=>array(
+        'db'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=dbname',
+            'emulatePrepare' => true,
+            'username' => '',
+            'password' => '',
+            'charset' => 'utf8',
+            'tablePrefix' => 'xdb_',
+
+        ),
+        'top'=>array(
+            'class'=>'application.vendors.top.TopClient',
+            'appkey'=>'12298980',
+            'secretKey'=>'afed4bf62de656ed5c19383d517d9424',
+            'format'=>'json',
+        ),
+    ),
+    'params'=>array(
+        'siteDomain'=>'app.xindianbao.dev',
+        'siteUrl'=>'http://app.xindianbao.dev/',
+        'adminEmail'=>'tech@shiyu-tech.com',
+        'adminPassword'=>'public',
+        'adminIpAddress'=>'127.0.0.1',
+        'adminOpen'=>true,
+        'betaUserNicks'=>array('仕宇网络科技'),
+    )
+);
+
+?>

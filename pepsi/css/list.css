@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+.height90{ background:url(../v2/images/daily-linebg_01.gif) repeat-x; background-position:bottom;}
+.height9001{ background:url(../v2/images/daily-linebg_02.gif) repeat-x; background-position:bottom; background:#f6f6f6;}
+.daily-table{text-align:center;}
+.daily-table td{padding:8px 0; vertical-align:top;}
+.tc-name{width:190px; text-align:left;}
+.tc-name a,.tc-name span{display:block; padding-left:5px; color:#333}
+.tc-name a{text-decoration:underline;}
+.tc-name a:hover{color:#70a9d5;}
+.tc-name span.price{color:#666; line-height:22px;}
+.tc-name span strong{color:#f20000; font-weight:bold; line-height:22px;}
+.cz a{display:block; color:#f20000; text-decoration:underline;}
+
+.daily-table td.tc_pic{position:relative;}
+.postagefee{position:absolute; width:28px; height:15px; right:0; top:8px;}
+
+.mode_pic{position:relative; width:80px;}
+.mode_pic img.bor{border:#dddcdc 1px solid;}
+.position{position:absolute; width:14px; height:13px; right:0; bottom:8px; *bottom:12px; _bottom:11px;display:none;}
+.mode_pic:hover .position{display:block;}
+
+.height36{height:36px; line-height:36px; background:url(../v2/images/publish_linebg.gif) repeat-x; background-position:bottom;}
+
+.bb-table td{padding:0; text-align:center;}
+.bb-table td.bb-name{text-align:left; width:290px;}
+.bb-table td.bb-name a{text-align:left; width:280px; text-decoration:underline; padding:0 5px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis; display:block;}
+.bb-name a:hover{color:#70a9d5;}
+.bb-table td.time{width:120px;}
+.bb-table td.success{width:70px;}
+.bb-table td.default{width:45px;}
+.bb-table td.reason{width:25px; text-align:left; vertical-align:middle;}
+.daily-table td.vt{vertical-align:top; padding:0}
+
+.effective{color:#f00;}
+.ineffective{color:#666;}
+
+.money-table{font-family:Microsoft Yahei; font-size:14px;}
+.money-table span{color:#F00; padding-right:8px;}
+.money-table td.left{border-right:#CCC 1px solid;border-top:#CCC 1px solid;border-bottom:#CCC 1px solid; height:30px; text-align:center;}
+.money-table td.right{border-left:#CCC 1px solid;border-top:#CCC 1px solid;border-bottom:#CCC 1px solid;height:30px; text-align:center;}
+
+.order-table{font-family:Microsoft Yahei; font-size:14px; height:35px;}
+.order-table a{color:#F00; text-decoration:underline;}
+.order-table a:hover{color:#F00;}

@@ -1,0 +1,50 @@
+<?php
+return CMap::mergeArray(
+    require(dirname(__FILE__).'/setting.php'),
+    array(
+        'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+        'name'=>'大搭出手',
+        'language'=>'zh_cn',
+        'sourceLanguage'=>'zh_cn',
+        'preload'=>array('log'),
+        'defaultController'=>'default/index',
+        'import'=>array(
+            'application.models.*',
+            'application.components.*',
+            'application.helps.*',
+		    'application.extensions.zip.*',
+    		// 'admin.models.*',
+    		'application.extensions.*',
+        	'admin.components.*',
+    		'application.extensions.timepicker.*',
+        	'ext.bootstrap.components.*',
+        ),
+        'components'=>array(
+			'zip'=>array(
+        		'class'=>'application.extensions.zip.EZip',
+		
+    		),
+        	'bootstrap'=>array('class'=>'ext.bootstrap.components.Bootstrap'),
+            'user'=>array(
+                'allowAutoLogin'=>true,
+                'loginUrl'=>'/da/default/login',
+            ),
+        	'admin'=>array(
+        		'class'=>'CAdminWebUser',
+        		'loginUrl'=>'/da/admin/default/login',
+        	),
+            'urlManager'=>array(
+               'urlFormat'=>'path',
+                'showScriptName'=>false,
+                'rules'=>require(dirname(__FILE__).'/routes.php'),
+              ),
+            'errorHandler'=>array(
+                // use 'site/error' action to display errors
+                'errorAction'=>'default/error',
+            ),
+            'cache'=>array(
+                'class'=>'system.caching.CFileCache',
+            ),
+        ),
+    )
+);
