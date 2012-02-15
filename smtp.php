@@ -1,6 +1,10 @@
 <?php
 class smtp
+<<<<<<< HEAD
 
+=======
+    //update
+>>>>>>> hotfix
 {
 
 /* Public Variables */
@@ -480,3 +484,7 @@ echo $message;
 
 ?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> hotfix
